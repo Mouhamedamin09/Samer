@@ -122,6 +122,12 @@ const Layout = ({ children }) => {
             label: 'My List',
             icon: 'list-outline',
         },
+        {
+            name: 'Coins',
+            screen: 'CoinScreen', // Updated to navigate to 'CoinScreen'
+            label: 'Coins',
+            icon: 'wallet-outline', // Choose an appropriate icon
+        },
     ];
 
     // User-Specific Navigation Items (excluding "My List")

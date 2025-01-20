@@ -9,13 +9,24 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourdomain.AnimoApp",
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-8177178441242549~4090421303"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.yourdomain.AnimoApp",
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-8177178441242549~4090421303"
+      },
+      "permissions": [
+        "INTERNET"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +42,13 @@
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "android": "ca-app-pub-8177178441242549~4090421303",
+          "ios": "ca-app-pub-8177178441242549~4090421303"
         }
       ]
     ],
